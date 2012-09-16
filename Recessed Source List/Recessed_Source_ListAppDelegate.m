@@ -67,27 +67,27 @@
 	// Build the sources array
 	sources = [[NSMutableArray array] retain];
 	
-	NSDictionary * joshDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Josh's Site", @"title", 
+	NSDictionary * joshDict = [NSDictionary dictionaryWithObjectsAndKeys:@"   Josh's Site", @"title",
 							   [NSURL URLWithString:@"http://joshua.nozzi.name"], @"url", 
 							   nil];
 	[sources addObject:joshDict];
 	
-	NSDictionary * bookDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Xcode Book", @"title", 
+	NSDictionary * bookDict = [NSDictionary dictionaryWithObjectsAndKeys:@"   Xcode Book", @"title",
 							   [NSURL URLWithString:@"http://xcodebook.com"], @"url", 
 							   nil];
 	[sources addObject:bookDict];
 	
-	NSDictionary * twitterDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Twitter", @"title", 
+	NSDictionary * twitterDict = [NSDictionary dictionaryWithObjectsAndKeys:@"   Twitter", @"title",
 								  [NSURL URLWithString:@"http://twitter.com/jnozzi"], @"url", 
 								  nil];
 	[sources addObject:twitterDict];
 	
-	NSDictionary * gplusDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Google+", @"title", 
+	NSDictionary * gplusDict = [NSDictionary dictionaryWithObjectsAndKeys:@"   Google+", @"title",
 								[NSURL URLWithString:@"https://plus.google.com/111089623202454701415/about?hl=en"], @"url", 
 								nil];
 	[sources addObject:gplusDict];
 	
-	NSDictionary * bartasDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Bartas", @"title", 
+	NSDictionary * bartasDict = [NSDictionary dictionaryWithObjectsAndKeys:@"   Bartas", @"title", 
 								 [NSURL URLWithString:@"http://bartastechnologies.com"], @"url", 
 								 nil];
 	[sources addObject:bartasDict];

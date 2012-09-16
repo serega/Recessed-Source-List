@@ -54,7 +54,7 @@
 
 - (NSColor *)dividerColor
 {
-	return [NSColor colorWithCalibratedWhite:0.83 alpha:1.0];
+	return [NSColor colorWithDeviceRed:212.0 / 255 green:212.0/255 blue:212.0/255 alpha:1.0];
 }
 
 - (void)drawDividerInRect:(NSRect)rect

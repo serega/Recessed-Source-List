@@ -60,16 +60,23 @@
 	
 	// Figure out right edge of row, leaving enough room for a 4px gradient
 	NSRect rightEdge = clipRect;
-	rightEdge.size.width = 4.0;
-	rightEdge.origin.x = NSMaxX([self bounds]) - 4.0;
+	rightEdge.size.width = 6.0;
+	rightEdge.origin.x = NSMaxX([self bounds]) - 6.0;
 	
 	// Does the clip rect intersect enough of the right edge?
 	if (NSIntersectsRect(clipRect, rightEdge))
 	{
 		
 		// Create the gradient (89, 91, 93, 95)
-		NSGradient * gradient = [[[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedWhite:0.89 alpha:1.0] 
-															   endingColor:[NSColor colorWithCalibratedWhite:0.95 alpha:1.0]] autorelease];
+		
+        NSGradient *gradient = [[[NSGradient alloc] initWithColorsAndLocations:
+                                [NSColor colorWithDeviceRed:225.0/255 green:225.0/255 blue:225.0/255 alpha:1.0], 0.0,
+                                [NSColor colorWithDeviceRed:228.0/255 green:228.0/255 blue:228.0/255 alpha:1.0], 0.1,
+                                [NSColor colorWithDeviceRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0], 0.40,
+                                [NSColor colorWithDeviceRed:248.0/255 green:248.0/255 blue:248.0/255 alpha:1.0], 0.8,
+                                [NSColor colorWithDeviceRed:248.0/255 green:248.0/255 blue:248.0/255 alpha:1.0], 1.0,
+                                nil] autorelease];
+
 		
 		// Set clip and draw the gradient
 		[NSGraphicsContext saveGraphicsState];
